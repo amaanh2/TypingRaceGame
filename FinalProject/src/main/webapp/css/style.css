@@ -1,0 +1,212 @@
+body, html {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Courier New', monospace;
+    background-color: #121212;
+    color: #E0E0E0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /*Add image*/
+    &::before {
+        content: '';
+        background-image: url(../BG.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0.25;
+    }
+}
+
+#top-panel {
+    transition: 0.5s;
+    position: relative;
+    background-image: linear-gradient(to right, #242424 0%, #343434  51%, #242424  100%);
+    width: 50%;
+    color: white;
+    padding: 10px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    /* Setting for title */
+    text-align: center;
+    font-size: 3vw;
+    font-weight: bold;
+    margin: auto;
+    box-shadow: 20px 0px 20px -20px darkslategray,
+    -25px 0px 20px -20px darkslategray;
+}
+
+#left-panel {
+    font-size: 1vw;
+    transition: 0.5s;
+    position: relative;
+    background-color: #242424;
+    background-image: linear-gradient(to right, #242424 0%, #343434  51%, #242424  100%);
+    width: 50%;
+    height: 20%;
+    flex-shrink: 0;
+    color: #E0E0E0;
+    padding: 10px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    box-shadow: 20px 0px 20px -20px darkslategray,
+    -25px 0px 20px -20px darkslategray;
+}
+
+#left-panel input {
+    margin-bottom: 10px;
+    padding: 10px;
+    color: #E0E0E0;
+    background-color: #333333;
+    border: 1px solid #444444;
+    border-radius: 10px;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+#left-panel button {
+    transition: 0.5s;
+    background-image: linear-gradient(to right, #485563 0%, #29323c  51%, #485563  100%);
+    padding: 10px 50px;
+    text-align: center;
+    text-transform: uppercase;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px darkslategray;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#left-panel button:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+#left-panel hr {
+    border: 0;
+    height: 1px;
+    background-color: #444444;
+    margin: 20px 0;
+}
+
+#right-panel {
+    font-size: 1vw;
+    transition: 0.5s;
+    position: relative;
+    background-image: linear-gradient(to right, #242424 0%, #343434  51%, #242424  100%);
+    width: 50%;
+    height: 80%;
+    padding: 10px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    box-shadow: 20px 0px 20px -20px darkslategray,
+    -25px 0px 20px -20px darkslategray;
+}
+
+#chat-messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    background-color: #333333;
+    border: 1px solid #444444;
+    margin: auto auto 10px auto;
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    color: #E0E0E0;
+}
+
+#chat-message-input {
+    padding: 10px;
+    background-color: #333333;
+    border: 1px solid #444444;
+    margin: auto auto 10px auto;
+    width: 80%;
+    color: #E0E0E0;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+#send-message {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#send-message:hover {
+    background-color: #0056b3;
+}
+
+/* About page */
+#about-content{
+    transition: 0.5s;
+    position: relative;
+    background-image: linear-gradient(to right, #242424 0%, #343434  51%, #242424  100%);
+    width: 80%;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    /* Setting for title */
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: bold;
+    margin: auto;
+    box-shadow: 5px 10px 1rem darkslategray;
+}
+
+/* Instruction page */
+#instructions-content{
+    transition: 0.5s;
+    position: relative;
+    background-image: linear-gradient(to right, #242424 0%, #343434  51%, #242424  100%);
+    width: 80%;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    /* Setting for title */
+    text-align: left;
+    font-size: 1.5vw;
+    font-weight: bold;
+    margin: auto; /* This will center the panel vertically */
+    box-shadow: 5px 10px 1rem darkslategray;
+}
+
+.star {
+    position: fixed;
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    border-radius: 50%;
+    animation: fall linear forwards;
+    z-index: 1;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100vh);
+        opacity: 1;
+        filter: blur(0px);
+    }
+    100% {
+        transform: translateY(100vh);
+        opacity: 0;
+        filter: blur(2px);
+    }
+}
