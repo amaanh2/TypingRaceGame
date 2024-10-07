@@ -15,7 +15,7 @@ We created a fun typing race game using web sockets. In our web-based game, play
 https://youtu.be/ZOV7O8Bvbbo
 
 ## How To Run
-1. Clone the repository to your local machine: git clone https://github.com/OntarioTech-CS-program/w24-csci2020u-final-project-ahmed-pereria-fan-li
+1. Clone the repository to your local machine: git clone https://github.com/amaanh2/TypingRaceGame
 2. Open the project in IntelliJ.
 3. Build the project to resolve dependencies.
 4. Start the application server.
