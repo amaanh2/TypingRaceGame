@@ -1,5 +1,4 @@
-# Final Project - Typing Race
-CSCI 2020U: Software Systems Development and Integration
+# Typing Race Game
 
 ## Developers and Associated Github Links
 -	Zhaojun Li: https://github.com/Zhaojun-Li
@@ -36,9 +35,3 @@ Libraries
 - import java.util.concurrent.Executors;
 - import java.util.concurrent.ScheduledExecutorService;
 - import java.util.concurrent.TimeUnit;
-
-## Contribution Report
--	Zhaojun Li: Responsible for Interface, 30%
--	Ryan Fan: Responsible for back-end endpoints, 30%
--	Luke Pereira: Responsible for back-end endpoints, 30%
--	Amaan Ahmed: Responsible for instructions page and README.md, 10%
